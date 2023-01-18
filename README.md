@@ -1,3 +1,7 @@
 # My personal website
 
-This website hab been built with [`svelte`](https://kit.svelte.dev/)
+Built with [`SvelteKit`](https://kit.svelte.dev/)
+
+# Deployed site
+
+TBA
