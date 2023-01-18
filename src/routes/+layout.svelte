@@ -1,6 +1,4 @@
-<script>
-	import TopBar from "../lib/components/TopBar.svelte";
-    
+<script>    
 </script>
 <nav></nav>
   

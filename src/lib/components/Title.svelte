@@ -2,36 +2,57 @@
     const info = [
     'Information and Communication Technology student at Utu',
     'Co-founder of Kvanttori Oy',
-    'passionate about learning to code',
-    'kissa ja koira'
+    'passionate csgo player'
 ]
 </script>
 
-<div class="container">
+<div class="title">
     <a class="name" href="/about">Teemu Salonen</a>
-    {#each info as infoLine }
-        <h3 class="line">{infoLine}</h3>
-    {/each}
+    <div class="line-container">
+        {#each info as infoLine }
+            <h3 class="line" style="fontStyle: {infoLine.includes('csgo') ? 'italic': ''}">{infoLine}</h3>
+        {/each}
+    </div>
+   
 </div>
 
 <style>
     @import url('https://fonts.googleapis.com/css2?family=M+PLUS+2:wght@300&display=swap');
 
+    .title {
+        border: solid 1px red;
+        float: left;
+        width: 50vw;
+        margin-top: 20vh;
+    }
+
     .name {
+        color: rgb(171, 171, 171);
         text-decoration-line: none;
-        font-size: 2em;
+        font-size: 1.9em;
         display: flex;
         justify-content: center;
-        transform: scale(.9);
+        transform: scale(.975);
         transition: color .5s, transform .5s;
     }
     .name:hover {
-        color: rgb(142, 75, 75);
-        transform: translateY(-7.5%);
+        color: rgb(255, 255, 255);
+        transform: translateY(-5%);
         cursor: pointer;
     }
 
+    .line-container {
+        display: flex;
+        flex-direction: column;
+    }
+
     .line {
-        color: rgb(255, 255, 255);
+        font-size: .8em;
+        color: rgb(171, 171, 171);
+
+        
+        margin: 5px;
+        display: flex;
+        justify-content: center;
     }
 </style>

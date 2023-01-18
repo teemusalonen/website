@@ -4,23 +4,31 @@ import Title from "../lib/components/Title.svelte";
 </script>
 
 <div class="home">
+    <div class="topbar">
+        <TopBar />
+    </div>
     <div class="content">
-        <Title />    
+        <Title />
     </div>
     
 </div>
 
 <style>
 @import url('https://fonts.googleapis.com/css2?family=M+PLUS+2:wght@300&display=swap');
+    .topbar {
+        display: flex;
+        justify-content: center;
+    }
+
     .home {
+        border: solid 1px blue;
         font-family: 'M PLUS 2', sans-serif;
+
+    }
+    .content {
         display: flex;
         width: 100%;
         height: 100%;
-        align-items: center;   
-        justify-content: center;
-    }
-    .content {
-        top: 50px;
+        margin-top: 50px;
     }
 </style>
